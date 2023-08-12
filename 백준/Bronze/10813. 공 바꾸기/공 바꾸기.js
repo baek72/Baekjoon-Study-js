@@ -1,6 +1,9 @@
 const input = require("fs").readFileSync('/dev/stdin').toString().split('\n');
 
 let [N, M] = input[0].split(" ").map(Number);
+// x = 현재값 1, y = 인덱스
+// 1 1 1 1 1
+// 0 1 2 3 4
 let arr = new Array(N).fill(1).map((x, y) => x + y);
 
 // i = 줄 (공 넣는 횟수)
